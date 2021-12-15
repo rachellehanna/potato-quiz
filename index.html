@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#enter_viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Potato Quiz</title>
+
+    <link rel="stylesheet" href="setup.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper header">
+        <img src="assets/title.jpg" alt="What kind of potato am I?" />
+        <a id="take-the-quiz">Take the <strong>quiz</strong></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="question-area">
+        <div class="wrapper">
+          <p id="question"></p>
+        </div>
+      </section>
+
+      <section class="answer-area">
+        <div class="wrapper">
+          <button id="button0"></button>
+          <button id="button1"></button>
+          <button id="button2"></button>
+          <button id="button3"></button>
+        </div>
+      </section>
+
+      <div class="potato-result">
+        <div id="red-potato">
+          <img src="assets/redPotato.jpg" />
+          <p>Congratulations! You are a red potato!</p>
+          <button>Play again</button>
+        </div>
+        <div id="sweet-potato">
+          <img src="assets/sweetPotato.jpg" />
+          <p>Congratulations! You are a sweet potato!</p>
+          <button>Play again</button>
+        </div>
+        <div id="fingerling-potato">
+          <img src="assets/fingerling.jpg" />
+          <p>Congratulations! You are a fingerling potato!</p>
+          <button>Play again</button>
+        </div>
+        <div id="russet-potato">
+          <img src="assets/russet.jpg" />
+          <p>Congratulations! You are a russet potato!</p>
+          <button>Play again</button>
+        </div>
+        <div id="yukon-gold-potato">
+          <img src="assets/yukonGold.jpg" />
+          <p>Congratulations! You are a yukon gold potato!</p>
+          <button>Play again</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">
+        Created by Rachelle Hanna at
+        <a href="https://junocollege.com/">Juno College of Technology</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

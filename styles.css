@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  background-color: #a7d1d1;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+p {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper.header {
+  height: 100vh;
+  justify-content: center;
+}
+
+#take-the-quiz {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+
+button {
+  font-size: 0.9rem;
+  border: none;
+  min-width: 10rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.potato-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.potato-result > div {
+  display: none;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  font-size: 0.8rem;
+}
