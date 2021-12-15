@@ -92,8 +92,17 @@ function scrollToMain() {
 
 $("#take-the-quiz").click(scrollToMain);
 
-function hello(event) {
-  console.log("hey");
+function playAgain(event) {
+  $(".question-area").show();
+  $(".answer-area").show();
+  $(".potato-result > div").hide();
+  currentQuestionIndex = 0;
+  score = 0;
+  $("#question").text(questions[currentQuestionIndex].text);
+  $("#button0").text(questions[currentQuestionIndex].options[0]);
+  $("#button1").text(questions[currentQuestionIndex].options[1]);
+  $("#button2").text(questions[currentQuestionIndex].options[2]);
+  $("#button3").text(questions[currentQuestionIndex].options[3]);
 }
 
-$(".potato-result button").click(hello);
+$(".potato-result button").click(playAgain);
