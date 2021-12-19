@@ -44,11 +44,15 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 
-$("#question").text(questions[currentQuestionIndex].text);
-$("#button0").text(questions[currentQuestionIndex].options[0]);
-$("#button1").text(questions[currentQuestionIndex].options[1]);
-$("#button2").text(questions[currentQuestionIndex].options[2]);
-$("#button3").text(questions[currentQuestionIndex].options[3]);
+function showQuestionAndOptions() {
+  $("#question").text(questions[currentQuestionIndex].text);
+  $("#button0").text(questions[currentQuestionIndex].options[0]);
+  $("#button1").text(questions[currentQuestionIndex].options[1]);
+  $("#button2").text(questions[currentQuestionIndex].options[2]);
+  $("#button3").text(questions[currentQuestionIndex].options[3]);
+}
+
+showQuestionAndOptions();
 
 function handleClick(event) {
   const id = event.target.id;
@@ -62,11 +66,7 @@ function handleClick(event) {
     $(potatoId).show();
   } else {
     currentQuestionIndex = currentQuestionIndex + 1;
-    $("#question").text(questions[currentQuestionIndex].text);
-    $("#button0").text(questions[currentQuestionIndex].options[0]);
-    $("#button1").text(questions[currentQuestionIndex].options[1]);
-    $("#button2").text(questions[currentQuestionIndex].options[2]);
-    $("#button3").text(questions[currentQuestionIndex].options[3]);
+    showQuestionAndOptions();
   }
 }
 
@@ -98,11 +98,7 @@ function playAgain(event) {
   $(".potato-result > div").hide();
   currentQuestionIndex = 0;
   score = 0;
-  $("#question").text(questions[currentQuestionIndex].text);
-  $("#button0").text(questions[currentQuestionIndex].options[0]);
-  $("#button1").text(questions[currentQuestionIndex].options[1]);
-  $("#button2").text(questions[currentQuestionIndex].options[2]);
-  $("#button3").text(questions[currentQuestionIndex].options[3]);
+  showQuestionAndOptions();
 }
 
 $(".potato-result button").click(playAgain);
