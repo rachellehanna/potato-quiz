@@ -74,15 +74,15 @@ $(".answer-area button").click(handleClick);
 
 function calculateResult(score) {
   if (score <= 6) {
-    return "#red-potato";
+    return "#yukon-gold-potato";
   } else if (score <= 12) {
     return "#sweet-potato";
   } else if (score <= 18) {
-    return "#fingerling-potato";
-  } else if (score <= 24) {
     return "#russet-potato";
+  } else if (score <= 24) {
+    return "#fingerling-potato";
   } else {
-    return "#yukon-gold-potato";
+    return "#red-potato";
   }
 }
 
