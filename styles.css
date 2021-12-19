@@ -49,6 +49,7 @@ button {
 
 .potato-result > div {
   display: none;
+  text-align: center;
 }
 
 main {
